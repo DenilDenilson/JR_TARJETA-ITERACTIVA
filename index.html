@@ -11,35 +11,35 @@
     <title>card</title>
 </head>
 <body>
-  <div>
-    <hgroup>
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial.</p>
-      <p>No credit card required.</p>
-      <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
+  <div class=" bg-[url('../images/bg-pattern.svg')] bg-no-repeat px-6 py-16 relative">
+    <hgroup class="relative mb-16">
+      <h1 class="font-extrabold text-Dark_Desaturated_Blue text-center text-xl">Simple, traffic-based pricing</h1>
+      <p class="text-center text-Grayish_Blue font-semibold text-xs">Sign-up for our 30-day trial.</p>
+      <p class="text-center text-Grayish_Blue font-semibold text-xs">No credit card required.</p>
+      <div class="absolute top-[-30px] left-0 right-0 mx-auto -z-40">
+                <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
       </div>
     </hgroup>
-      <main>
-        <p>100k pageviews</p>
+      <main class="bg-White flex flex-col items-center">
+        <p class="text-xs text-Grayish_Blue uppercase">100k pageviews</p>
         <input type="range">
-        <p>$16.00 <span>/month</span></p>
-        <div>
-          <p>Monthly Billing</p>
+        <p class="text-xl text-Dark_Desaturated_Blue font-extrabold">$16.00 <span class="font-semibold text-sm text-Grayish_Blue">/month</span></p>
+        <div class="flex items-center justify-between">
+          <p class="text-xs text-Grayish_Blue">Monthly Billing</p>
           <label for="">
             <input type="checkbox" name="" id="">
             <span></span>
           </label>
-          <p>Yearly Billing</p>
-          <p>-25%</p>
+          <p class="text-xs text-Grayish_Blue">Yearly Billing</p>
+          <p class="text-[10px] text-Light_Red font-extrabold bg-Light_Red bg-opacity-30 rounded-xl p-[2px]">-25%</p>
         </div>
-        <footer>
-          <ul>
-            <li><span></span>Unlimited websites</li>
-            <li><span></span>100% data ownership</li>
-            <li><span></span>Email reports</li>
+        <footer class="w-full border-t-2 flex flex-col items-center shadow-lg">
+          <ul class="flex flex-col items-center">
+            <li class="text-xs text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>Unlimited websites</li>
+            <li class="text-xs text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>100% data ownership</li>
+            <li class="text-xs text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>Email reports</li>
           </ul>
-          <button>Start my trial</button>
+          <button class="bg-Dark_Desaturated_Blue text-Pale_Blue text-xs py-3 px-10 rounded-3xl">Start my trial</button>
         </footer>
       </main>
   </div>
