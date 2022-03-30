@@ -33,9 +33,11 @@
       xl:grid xl:grid-cols-2 xl:grid-rows-2">
         <p class="text-xs text-Grayish_Blue uppercase
         xl:font-extrabold xl:text-base">100k pageviews</p>
-        <input class="my-8 w-full appearance-none outline-none rounded-lg bg-Soft_Cyan h-[6px] 
+
+        <input class="my-8 w-full appearance-none outline-none rounded-lg  h-[6px] 
         focus:outline-none focus:ring-0 focus:shadow-none
-        xl:col-start-1 xl:col-span-2" id="input-range" min="0" max="100" value="50%" type="range">        
+        xl:col-start-1 xl:col-span-2" id="input-range" min="0" max="100" value="50%" type="range">   
+
         <p class="text-xl mb-5 text-Dark_Desaturated_Blue font-extrabold
         xl:col-start-2 xl:col-span-1 xl:row-start-1 xl:row-span-1 xl:mb-0 xl:text-4xl xl:font-extrabold">$16.00 <span class="font-semibold text-sm text-Grayish_Blue
         xl:text-xl">/month</span></p>
@@ -44,11 +46,11 @@
         xl:my-5">
           <p class="text-xs text-Grayish_Blue">Monthly Billing</p>
           <label class="relative" for="">
-            <input type="checkbox" name="" id="" class="absolute invisible peer rounded-[20px] z-40 bg-Grayish_Blue outline-none border-0">
-            <span class="relative block w-[40px] h-[20px] z-30 bg-Light_Grayish_Blue cursor-pointer rounded-[20px] overflow-hidden
+            <input type="checkbox" name="" id="input-checkbox" class="absolute invisible peer rounded-[20px] z-40 bg-Grayish_Blue outline-none border-0">
+            <span id="circle-checkbox" class="relative block w-[40px] h-[20px] z-30 bg-Light_Grayish_Blue cursor-pointer rounded-[20px] overflow-hidden
             hover:bg-Strong_Cyan 
             
-            before:absolute before:top-[4px] before:left-[4px] before:bg-White before:w-3 before:h-3 before:rounded-lg"></span>
+            before:absolute before:top-[4px] before:left-[4px] before:bg-White before:w-3 before:h-3 before:rounded-lg before:transition before:duration-300"></span>
           </label>
           <p class="text-xs text-Grayish_Blue">Yearly Billing</p>
           <p class="text-[10px] text-Light_Red font-extrabold bg-Light_Red bg-opacity-30 rounded-xl p-[2px]
@@ -71,5 +73,6 @@
         </footer>
       </main>
   </div>
+  <script src="./src/main.js"></script>
 </body>
 </html>

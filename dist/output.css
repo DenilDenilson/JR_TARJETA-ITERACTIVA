@@ -558,12 +558,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 85%;
 }
 
-.w-\[40px\] {
-  width: 40px;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .max-w-\[725px\] {
@@ -627,11 +627,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-White {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-}
-
-.bg-Soft_Cyan {
-  --tw-bg-opacity: 1;
-  background-color: hsl(174 77% 80% / var(--tw-bg-opacity));
 }
 
 .bg-Grayish_Blue {
@@ -766,6 +761,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
+:root {
+  --RANGE-VALUE: 50%;
+}
+
 #input-range::-webkit-slider-thumb{
   -webkit-appearance: none;
   width: 36px;
@@ -789,6 +788,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
 } */
 
+#input-range {
+  /* background: linear-gradient(
+        to-right,
+        hsl(174, 86%, 45%) var(--RANGE-VALUE),
+        hsl(223, 50%, 87%) 0
+    ); */
+  background: linear-gradient(90deg, 
+    hsl(174, 77%, 80%) var(--RANGE-VALUE), 
+    hsl(223, 50%, 87%) 0);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -804,6 +814,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 4px;
 }
 
+.before\:right-\[4px\]::before {
+  content: var(--tw-content);
+  right: 4px;
+}
+
 .before\:h-3::before {
   content: var(--tw-content);
   height: 0.75rem;
@@ -812,6 +827,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:w-3::before {
   content: var(--tw-content);
   width: 0.75rem;
+}
+
+.before\:translate-x-5::before {
+  content: var(--tw-content);
+  --tw-translate-x: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .before\:rounded-lg::before {
@@ -823,6 +844,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.before\:transition::before {
+  content: var(--tw-content);
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.before\:duration-300::before {
+  content: var(--tw-content);
+  transition-duration: 300ms;
 }
 
 .hover\:bg-Strong_Cyan:hover {
@@ -937,11 +972,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 4rem;
   }
 
-  .xl\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .xl\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -962,16 +992,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.5rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -979,10 +999,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:font-extrabold {
     font-weight: 800;
-  }
-
-  .xl\:font-semibold {
-    font-weight: 600;
   }
 
   .xl\:after\:content-\[\'discount\'\]::after {
