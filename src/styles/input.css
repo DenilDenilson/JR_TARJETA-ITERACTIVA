@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#input-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 36px;
+    height: 36px;
+    background-color: hsl(174, 86%, 45%);
+    background-image: url('../images/icon-slider.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 16px hsl(174, 86%, 45%);
+}
+
+/* input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+} */

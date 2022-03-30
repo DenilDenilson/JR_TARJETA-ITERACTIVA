@@ -22,23 +22,26 @@
     </hgroup>
       <main class="bg-White flex flex-col items-center shadow-lg py-6">
         <p class="text-xs text-Grayish_Blue uppercase">100k pageviews</p>
-        <input class="my-6 w-[80%] appearance-none outline-none rounded-sm bg-Soft_Cyan h-1 
-        focus:outline-none focus:ring-0 focus:shadow-none" value="50%" type="range">
-        <p class="text-xl text-Dark_Desaturated_Blue font-extrabold">$16.00 <span class="font-semibold text-sm text-Grayish_Blue">/month</span></p>
-        <div class="flex items-center justify-between">
+        
+          <input class="my-8 w-[85%] appearance-none outline-none rounded-lg bg-Soft_Cyan h-[6px] 
+          focus:outline-none focus:ring-0 focus:shadow-none" id="input-range" min="0" max="100" value="50%" type="range">        
+        <p class="text-xl mb-5 text-Dark_Desaturated_Blue font-extrabold">$16.00 <span class="font-semibold text-sm text-Grayish_Blue">/month</span></p>
+        <div class="flex w-[85%] max-w-[425px] items-center justify-between mb-5">
           <p class="text-xs text-Grayish_Blue">Monthly Billing</p>
-          <label class="" for="">
-            <input type="checkbox" name="" id="">
-            <span></span>
+          <label class="relative" for="">
+            <input type="checkbox" name="" id="" class="absolute invisible peer rounded-[20px] z-40 bg-Grayish_Blue outline-none border-0">
+            <span class="relative block w-[40px] h-[20px] z-30 bg-Light_Grayish_Blue cursor-pointer rounded-[20px] overflow-hidden
+            
+            before:absolute before:top-[4px] before:left-[4px] before:bg-White before:w-3 before:h-3 before:rounded-lg"></span>
           </label>
           <p class="text-xs text-Grayish_Blue">Yearly Billing</p>
           <p class="text-[10px] text-Light_Red font-extrabold bg-Light_Red bg-opacity-30 rounded-xl p-[2px]">-25%</p>
         </div>
-        <footer class="w-full border-t-[1px] flex flex-col items-center">
+        <footer class="w-full border-t-[1px] flex flex-col items-center py-5">
           <ul class="flex flex-col items-center">
-            <li class="text-xs text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>Unlimited websites</li>
-            <li class="text-xs text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>100% data ownership</li>
-            <li class="text-xs text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>Email reports</li>
+            <li class="text-xs mb-2 text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>Unlimited websites</li>
+            <li class="text-xs mb-2 text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>100% data ownership</li>
+            <li class="text-xs mb-4 text-Grayish_Blue text-center flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>Email reports</li>
           </ul>
           <button class="bg-Dark_Desaturated_Blue text-Pale_Blue text-xs py-3 px-10 rounded-3xl">Start my trial</button>
         </footer>
