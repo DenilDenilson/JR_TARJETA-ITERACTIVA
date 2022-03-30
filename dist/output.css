@@ -566,6 +566,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.max-w-\[725px\] {
+  max-width: 725px;
+}
+
 .max-w-\[425px\] {
   max-width: 425px;
 }
@@ -635,6 +639,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(225 20% 60% / var(--tw-bg-opacity));
 }
 
+.bg-Light_Grayish_Blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(223 50% 87% / var(--tw-bg-opacity));
+}
+
 .bg-Light_Red {
   --tw-bg-opacity: 1;
   background-color: hsl(15 100% 70% / var(--tw-bg-opacity));
@@ -643,20 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-Dark_Desaturated_Blue {
   --tw-bg-opacity: 1;
   background-color: hsl(227 35% 25% / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
-}
-
-.bg-Light_Grayish_Red {
-  --tw-bg-opacity: 1;
-  background-color: hsl(14 92% 95% / var(--tw-bg-opacity));
-}
-
-.bg-Light_Grayish_Blue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(223 50% 87% / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
@@ -784,6 +779,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: 0 4px 16px hsl(174, 86%, 45%);
 }
 
+#input-range::-webkit-slider-thumb:active {
+  background-color: hsl(174, 74%, 25%);
+}
+
 /* input[type="checkbox"] {
     -webkit-appearance: none;
     visibility: hidden;
@@ -793,16 +792,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
-}
-
-.before\:top-\[2px\]::before {
-  content: var(--tw-content);
-  top: 2px;
-}
-
-.before\:left-\[2px\]::before {
-  content: var(--tw-content);
-  left: 2px;
 }
 
 .before\:top-\[4px\]::before {
@@ -815,19 +804,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 4px;
 }
 
-.before\:h-4::before {
-  content: var(--tw-content);
-  height: 1rem;
-}
-
 .before\:h-3::before {
   content: var(--tw-content);
   height: 0.75rem;
-}
-
-.before\:w-4::before {
-  content: var(--tw-content);
-  width: 1rem;
 }
 
 .before\:w-3::before {
@@ -846,9 +825,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
-.before\:content-none::before {
-  --tw-content: none;
-  content: var(--tw-content);
+.hover\:bg-Strong_Cyan:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(174 86% 45% / var(--tw-bg-opacity));
+}
+
+.hover\:text-White:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 .focus\:shadow-none:focus {
@@ -868,7 +852,141 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.peer:checked ~ .peer-checked\:bg-Dark_Desaturated_Blue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(227 35% 25% / var(--tw-bg-opacity));
+@media (min-width: 1280px) {
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .xl\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .xl\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .xl\:row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
+  .xl\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .xl\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .xl\:mb-36 {
+    margin-bottom: 9rem;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:inline {
+    display: inline;
+  }
+
+  .xl\:grid {
+    display: grid;
+  }
+
+  .xl\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .xl\:font-semibold {
+    font-weight: 600;
+  }
+
+  .xl\:after\:content-\[\'discount\'\]::after {
+    --tw-content: 'discount';
+    content: var(--tw-content);
+  }
 }

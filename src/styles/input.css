@@ -15,6 +15,10 @@
     box-shadow: 0 4px 16px hsl(174, 86%, 45%);
 }
 
+#input-range::-webkit-slider-thumb:active {
+    background-color: hsl(174, 74%, 25%);
+}
+
 /* input[type="checkbox"] {
     -webkit-appearance: none;
     visibility: hidden;
